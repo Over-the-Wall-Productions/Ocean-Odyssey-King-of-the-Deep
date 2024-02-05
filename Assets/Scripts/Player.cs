@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     {
         Move();
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
         }
