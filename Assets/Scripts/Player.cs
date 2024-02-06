@@ -2,43 +2,39 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed = 5f;
 
     // to access camera in unity
-    private Camera _camera;
+    public Camera _camera;
 
-    public Transform bulletSpawn;
+    public Rigidbody2D rb;
 
-    public GameObject bulletPrefab;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _camera = Camera.main;
-    }
+    Vector2 movement;
+    Vector2 mousePosn; // reference to mouse position
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-    }
-
-    private void Move()
-    {
-        float horizontalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
-
-        Vector2 move = new Vector2(horizontalMovement, verticalMovement);
-
-        transform.Translate(move * speed * Time.deltaTime);
+        mousePosn = _camera.ScreenToWorldPoint(Input.mousePosition); // convert to world point because game doesn't exist in pixel units
 
         OffBounds();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+
+        // this allows the sprite to look in the direction of the mouse position (vector - vector = vector that points from one to other)
+        Vector2 lookDirection = mousePosn - rb.position;
+
+        // Atan2 allows us to rotate player (our z rotation), we then convert from radians to degrees
+        // 
+        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f; 
+
+        rb.rotation = angle;
     }
 
     private void OffBounds()
@@ -57,12 +53,6 @@ public class Player : MonoBehaviour
 
         // convert the adjusted viewport coordinates back to world coordinates
         transform.position = _camera.ViewportToWorldPoint(viewPos);
-    }
-
-    void Shoot()
-    {
-        var bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
-        bullet.GetComponent<Rigidbody2D>().AddForce(bulletSpawn.up * 500f);
     }
 
 }
