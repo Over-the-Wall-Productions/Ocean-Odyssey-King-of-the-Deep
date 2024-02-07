@@ -279,6 +279,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2042381424130605363, guid: d181b66d107854f47a3a2aea8a75e911, type: 3}
+      propertyPath: farEnemyPrefab
+      value: 
+      objectReference: {fileID: 2794019723948643772, guid: 2dafdf7192ee51a4b85f1a54e1398969, type: 3}
+    - target: {fileID: 2042381424130605363, guid: d181b66d107854f47a3a2aea8a75e911, type: 3}
+      propertyPath: closeEnemyPrefab
+      value: 
+      objectReference: {fileID: 1212537225158351938, guid: 0eda4048b666d9744a5241ca7c5462c1, type: 3}
     - target: {fileID: 3333616607106555247, guid: d181b66d107854f47a3a2aea8a75e911, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
