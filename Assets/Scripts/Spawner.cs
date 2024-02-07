@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject prefabToSpawn;
+    public GameObject farEnemyPrefab;
+    public GameObject closeEnemyPrefab;
     public float spawnInterval = 2f; // Time between spawns
 
     private float nextSpawnTime;
@@ -17,15 +18,16 @@ public class Spawner : MonoBehaviour
     {
         if (Time.time >= nextSpawnTime)
         {
-            SpawnPrefabInFreeArea();
+            SpawnPrefabInFreeArea(farEnemyPrefab);
+            SpawnPrefabInFreeArea(closeEnemyPrefab);
             nextSpawnTime = Time.time + spawnInterval;
         }
     }
 
-    void SpawnPrefabInFreeArea()
+    void SpawnPrefabInFreeArea(GameObject prefab)
     {
         Vector2 spawnPosition = GetRandomPositionOnScreen();
-        Instantiate(prefabToSpawn, spawnPosition, Quaternion.identity);
+        Instantiate(prefab, spawnPosition, Quaternion.identity);
     }
 
     Vector2 GetRandomPositionOnScreen()
