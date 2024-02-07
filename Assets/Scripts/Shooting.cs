@@ -10,12 +10,21 @@ public class Shooting : MonoBehaviour
 
     public float force = 20f;
 
+    public float shotDelay = 1f;
+    public float timeOfLastShot;
+
     private void Update()
     {
         // Fire1 is mousepad for keyboard
         if(Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            // Delay between shots
+            if (Time.time - timeOfLastShot >= shotDelay)
+            {
+                Shoot();
+                timeOfLastShot = Time.time;
+            }   
+            
         }
     }
 

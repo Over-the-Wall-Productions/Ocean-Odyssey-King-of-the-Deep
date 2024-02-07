@@ -55,4 +55,8 @@ public class Player : MonoBehaviour
         transform.position = _camera.ViewportToWorldPoint(viewPos);
     }
 
+    
+
+
+
 }

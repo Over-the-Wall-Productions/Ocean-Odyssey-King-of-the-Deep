@@ -267,6 +267,8 @@ MonoBehaviour:
   bulletSpawn: {fileID: 2003814637}
   bulletPrefab: {fileID: 2721359559420010204, guid: b1dd7c5bf5b72441ba8a9a949e708f2f, type: 3}
   force: 20
+  shotDelay: 1
+  timeOfLastShot: 0
 --- !u!1001 &7276875033054034282
 PrefabInstance:
   m_ObjectHideFlags: 0
