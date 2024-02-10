@@ -4,14 +4,17 @@ public class Spawner : MonoBehaviour
 {
     public GameObject farEnemyPrefab;
     public GameObject closeEnemyPrefab;
-    public float spawnInterval = 2f; // Time between spawns
+    public float spawnInterval = 1.5f; // Time between spawns
+    public float spawnRadius = 5f; // Minimum distance from the player
 
     private float nextSpawnTime;
     private Camera mainCamera;
+    private GameObject player; // Reference to the player GameObject
 
     void Start()
     {
         mainCamera = Camera.main; // Cache the main camera
+        player = GameObject.FindGameObjectWithTag("Player"); // Assuming player has the tag "Player"
     }
 
     void Update()
@@ -27,6 +30,13 @@ public class Spawner : MonoBehaviour
     void SpawnPrefabInFreeArea(GameObject prefab)
     {
         Vector2 spawnPosition = GetRandomPositionOnScreen();
+
+        // Check if the spawn position is within the specified radius from the player
+        while (Vector2.Distance(spawnPosition, player.transform.position) < spawnRadius)
+        {
+            spawnPosition = GetRandomPositionOnScreen();
+        }
+
         Instantiate(prefab, spawnPosition, Quaternion.identity);
     }
 
@@ -47,3 +57,4 @@ public class Spawner : MonoBehaviour
         return new Vector2(randomX, randomY);
     }
 }
+
