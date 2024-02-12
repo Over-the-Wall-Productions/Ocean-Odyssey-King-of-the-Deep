@@ -229,61 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2003814637}
---- !u!1 &2003814634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7360783982764016166, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
-  m_PrefabInstance: {fileID: 7679932171336368713}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2003814637 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5701244801164540752, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
-  m_PrefabInstance: {fileID: 7679932171336368713}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &2003814638
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003814634}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &2003814639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003814634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5c4c30a36214d3c865c75b8370edac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawn: {fileID: 2003814637}
-  bulletPrefab: {fileID: 2721359559420010204, guid: b1dd7c5bf5b72441ba8a9a949e708f2f, type: 3}
-  force: 20
-  shotDelay: 1
-  timeOfLastShot: 0
---- !u!1001 &7276875033054034282
+--- !u!1001 &1143078499
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -348,6 +294,60 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d181b66d107854f47a3a2aea8a75e911, type: 3}
+--- !u!1 &2003814634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7360783982764016166, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
+  m_PrefabInstance: {fileID: 7679932171336368713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2003814637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5701244801164540752, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
+  m_PrefabInstance: {fileID: 7679932171336368713}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &2003814638
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003814634}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &2003814639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003814634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5c4c30a36214d3c865c75b8370edac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpawn: {fileID: 2003814637}
+  bulletPrefab: {fileID: 2721359559420010204, guid: b1dd7c5bf5b72441ba8a9a949e708f2f, type: 3}
+  force: 20
+  shotDelay: 1
+  timeOfLastShot: 0
 --- !u!1001 &7679932171336368713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,6 +413,10 @@ PrefabInstance:
       value: Main Player
       objectReference: {fileID: 0}
     - target: {fileID: 9084563112191606290, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef43ab97a0cff064e833522f1aeea9a6, type: 3}
+    - target: {fileID: 9084563112191606290, guid: 7f70baf1e5e2de1478bedb0195a56bc5, type: 3}
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
@@ -433,4 +437,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 7679932171336368713}
-  - {fileID: 7276875033054034282}
+  - {fileID: 1143078499}
