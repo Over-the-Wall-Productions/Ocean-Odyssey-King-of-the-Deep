@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - Spike
+  - Sea Urchin
+  - Puffer Fish
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Enemies
   - Player
-  - 
-  - 
+  - Bullet
+  - Spike
   - 
   - 
   - 

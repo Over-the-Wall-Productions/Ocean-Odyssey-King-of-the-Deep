@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public int damage = 2;
+    public int damage = 5;
 
     // Variable to hold the rotation offset value
     public float rotationOffset = 0f;

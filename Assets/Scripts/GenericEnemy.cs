@@ -10,7 +10,7 @@ public class Shooter : MonoBehaviour
     private float nextShootTime;
 
     public int health = 6; // Health of the sea urchin (3 shots = dead)
-    //public int damage = 2;
+    public int damage = 2;
 
     void Update()
     {
