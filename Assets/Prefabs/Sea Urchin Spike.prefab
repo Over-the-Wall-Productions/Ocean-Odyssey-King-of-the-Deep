@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7502581460699735449}
   - component: {fileID: 3944742064164331609}
   - component: {fileID: 4988971720207272651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sea Urchin Spike
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc47d19eb297247f484c2b45bc488628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
   rotationOffset: 145
 --- !u!50 &4988971720207272651
 Rigidbody2D:

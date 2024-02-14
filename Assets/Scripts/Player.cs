@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     Vector2 movement;
     Vector2 mousePosn; // reference to mouse position
 
+    public float health = 10;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +33,6 @@ public class Player : MonoBehaviour
         Vector2 lookDirection = mousePosn - rb.position;
 
         // Atan2 allows us to rotate player (our z rotation), we then convert from radians to degrees
-        // 
         float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg - 90f; 
 
         rb.rotation = angle;
@@ -55,13 +56,35 @@ public class Player : MonoBehaviour
         transform.position = _camera.ViewportToWorldPoint(viewPos);
     }
 
-    //private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    if (collision.gameObject.CompareTag("Spike"))
+    //    var enemySpike = collision.GetComponent<Shooter>();
+    //    if (enemySpike != null)
+    //    {
+    //        Damage(enemySpike.damage);
+    //        Destroy(collision.gameObject);
+    //    }
+    //}
+
+    //private void Damage(int damage)
+    //{
+    //    health -= damage;
+    //    if (health == 0)
     //    {
     //        Destroy(gameObject);
     //    }
     //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject); // make sure that the enemy spike also disappears upon collision
+        }
+    }
+
+
 
 
 

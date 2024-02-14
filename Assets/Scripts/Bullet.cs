@@ -4,6 +4,8 @@ public class Bullet : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    public int damage = 2;
+
     // Variable to hold the rotation offset value
     public float rotationOffset = 0f;
 
@@ -26,8 +28,19 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Sea Urchin") | collision.gameObject.CompareTag("Puffer Fish") | collision.gameObject.CompareTag("Spike"))
+        {
+            Destroy(gameObject);
+
+        }
     }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Sea Urchin") | collision.CompareTag("Puffer Fish") | collision.CompareTag("Spike"))
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 
     private void OnBecameInvisible()
     {

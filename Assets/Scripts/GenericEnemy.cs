@@ -9,6 +9,9 @@ public class Shooter : MonoBehaviour
 
     private float nextShootTime;
 
+    public int health = 6; // Health of the sea urchin (3 shots = dead)
+    //public int damage = 2;
+
     void Update()
     {
         if (Time.time > nextShootTime)
@@ -47,4 +50,26 @@ public class Shooter : MonoBehaviour
             Destroy(gameObject); // Destroys this game object upon collision with a bullet
         }
     }
+
+        
+
+        //private void OnTriggerEnter2D(Collider2D collision)
+        //{
+        //    var playerBullet = collision.GetComponent<Bullet>();
+        //    if (playerBullet != null)
+        //    {
+        //        Damage(playerBullet.damage);
+        //        Destroy(collision.gameObject);
+        //    }
+        //}
+
+        //private void Damage(int damage)
+        //{
+        //    health -= damage;
+        //    if (health == 0)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+
+        //}
 }

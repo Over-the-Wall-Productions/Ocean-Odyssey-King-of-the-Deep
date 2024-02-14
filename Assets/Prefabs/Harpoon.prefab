@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2401840596494739817}
   - component: {fileID: -2189986023784244712}
   - component: {fileID: 8113315860704067088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Harpoon
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc47d19eb297247f484c2b45bc488628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
   rotationOffset: 270
 --- !u!61 &8113315860704067088
 BoxCollider2D:

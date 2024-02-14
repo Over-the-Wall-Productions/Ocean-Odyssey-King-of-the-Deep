@@ -33,4 +33,11 @@ public class MoveTowardsPlayer : MonoBehaviour
             Destroy(gameObject); // Destroys this game object upon collision with a bullet
         }
     }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Bullet"))
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 }

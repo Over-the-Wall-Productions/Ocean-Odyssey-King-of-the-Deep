@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8591557822856392221}
   - component: {fileID: 8753357486231974415}
   - component: {fileID: 831142096338726335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sea Urchin
-  m_TagString: Untagged
+  m_TagString: Sea Urchin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3508492890553855867, guid: 7cf876ac027061147a6a623f5741db66, type: 3}
   shootingRate: 2
   projectileSpeed: 10
+  health: 6
 --- !u!50 &8753357486231974415
 Rigidbody2D:
   serializedVersion: 4
