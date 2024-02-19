@@ -8,6 +8,8 @@ TagManager:
   - Spike
   - Sea Urchin
   - Puffer Fish
+  - SquidBoss
+  - Ink
   layers:
   - Default
   - TransparentFX
@@ -19,9 +21,9 @@ TagManager:
   - Player
   - Bullet
   - Spike
-  - 
-  - 
-  - 
+  - Boss
+  - Ink
+  - Wall
   - 
   - 
   - 

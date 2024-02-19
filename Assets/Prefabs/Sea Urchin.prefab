@@ -101,8 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3508492890553855867, guid: 7cf876ac027061147a6a623f5741db66, type: 3}
   shootingRate: 2
-  projectileSpeed: 10
-  health: 6
+  projectileSpeed: 5
+  _damageAmount: 10
+  health: 20
 --- !u!50 &8753357486231974415
 Rigidbody2D:
   serializedVersion: 4
@@ -159,7 +160,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
