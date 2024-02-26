@@ -10,7 +10,7 @@ public class Shooting : MonoBehaviour
 
     public float force = 20f;
 
-    public float shotDelay = 1f;
+    private float shotDelay = 0.5f;
     public float timeOfLastShot;
 
     private void Update()

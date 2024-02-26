@@ -104,6 +104,7 @@ MonoBehaviour:
   projectileSpeed: 5
   _damageAmount: 10
   health: 20
+  spikeDamage: 10
 --- !u!50 &8753357486231974415
 Rigidbody2D:
   serializedVersion: 4
@@ -163,7 +164,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.057104588, y: -0.04568386}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -174,5 +175,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.0481472, y: 2.720749}
   m_EdgeRadius: 0

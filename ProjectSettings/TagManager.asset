@@ -10,6 +10,7 @@ TagManager:
   - Puffer Fish
   - SquidBoss
   - Ink
+  - Spawner_box
   layers:
   - Default
   - TransparentFX
