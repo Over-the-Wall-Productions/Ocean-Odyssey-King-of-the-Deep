@@ -15,10 +15,6 @@ public class Shooter : MonoBehaviour
     // health of urchin
     public int health = 20;
 
-    // spike damage
-    public float spikeDamage = 10;
-
-
     void Update()
     {
         if (Time.time > nextShootTime)
@@ -82,6 +78,11 @@ public class Shooter : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
+
+
+
 
 
 }

@@ -32,6 +32,7 @@ public class MoveTowardsPlayer : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
+            Score.scoreValue += 1;
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }

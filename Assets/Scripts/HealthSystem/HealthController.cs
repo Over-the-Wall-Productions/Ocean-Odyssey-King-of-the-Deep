@@ -53,6 +53,7 @@ public class HealthController : MonoBehaviour
         {
             // disable movement, shooting, and collider for player
             onDeath.Invoke();
+            Destroy(gameObject);
         }
 
         else

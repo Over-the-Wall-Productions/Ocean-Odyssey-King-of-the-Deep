@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Shooting : MonoBehaviour
 {
@@ -13,18 +14,29 @@ public class Shooting : MonoBehaviour
     private float shotDelay = 0.5f;
     public float timeOfLastShot;
 
+    public UnityEvent<float> onReload;
+
+    private bool canShoot = true; //new
+
     private void Update()
     {
-        // Fire1 is mousepad for keyboard
-        if(Input.GetButtonDown("Fire1"))
+        
+        if (!canShoot)
         {
-            // Delay between shots
-            if (Time.time - timeOfLastShot >= shotDelay)
+            float currentDelay = shotDelay - (Time.time - timeOfLastShot);
+            onReload?.Invoke(currentDelay);
+
+            if (currentDelay <= 0)
             {
-                Shoot();
-                timeOfLastShot = Time.time;
-            }   
-            
+                canShoot = true;
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1") && canShoot)
+        {
+            Shoot();
+            timeOfLastShot = Time.time;
+            canShoot = false;
         }
     }
 
