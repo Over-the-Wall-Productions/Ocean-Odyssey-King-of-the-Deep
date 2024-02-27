@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 7502581460699735449}
   - component: {fileID: 4988971720207272651}
   - component: {fileID: 328308645999385608}
+<<<<<<< Updated upstream
   - component: {fileID: 5757027568603615928}
+=======
+  - component: {fileID: -7116300228335039549}
+>>>>>>> Stashed changes
   m_Layer: 9
   m_Name: Sea Urchin Spike
   m_TagString: Spike
@@ -143,7 +147,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -159,7 +163,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!114 &5757027568603615928
+=======
+--- !u!114 &-7116300228335039549
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +176,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3508492890553855867}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 871d91950e7e046bb9e6179c3084dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spikeDamage: 10
+=======
+  m_Script: {fileID: 11500000, guid: 85b41e8d486803e43a5c3ce542da6e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damageAmount: 0
+>>>>>>> Stashed changes

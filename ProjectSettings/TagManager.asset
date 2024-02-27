@@ -10,7 +10,11 @@ TagManager:
   - Puffer Fish
   - SquidBoss
   - Ink
+<<<<<<< Updated upstream
   - Spawner_box
+=======
+  - sonar
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -25,7 +29,7 @@ TagManager:
   - Boss
   - Ink
   - Wall
-  - 
+  - Sonar
   - 
   - 
   - 
