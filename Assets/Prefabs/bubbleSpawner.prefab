@@ -44,4 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c920a770b9ca96e4aab2cf0c380a7327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInstantiate: {fileID: 0}
+  bubble: {fileID: 6618811984481650550, guid: b5a430c6067d358499757d01e69bf5cb, type: 3}
+  spawnInterval: 1
