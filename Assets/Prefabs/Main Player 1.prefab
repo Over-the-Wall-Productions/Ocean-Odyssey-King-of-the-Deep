@@ -484,11 +484,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawn: {fileID: 9195792665590215475}
   bulletPrefab: {fileID: 2721359559420010204, guid: b1dd7c5bf5b72441ba8a9a949e708f2f, type: 3}
-  sonarPrefab: {fileID: 6545460025553066992, guid: 2ffd1cdeecd2f14418a97b8ec7b620e9, type: 3}
   force: 20
   shotDelay: 1
   timeOfLastShot: 0
-<<<<<<< Updated upstream
   onReload:
     m_PersistentCalls:
       m_Calls:
@@ -504,10 +502,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-=======
-  sonarDelay: 1
-  timeOfLastSonar: 0
->>>>>>> Stashed changes
 --- !u!114 &7054781678488961890
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,8 +1,6 @@
 
 using UnityEngine;
 
-using UnityEngine;
-
 public class Shooter : MonoBehaviour
 {
     public GameObject projectilePrefab; // Assign your projectile prefab in the inspector
@@ -17,15 +15,9 @@ public class Shooter : MonoBehaviour
     // health of urchin
     public int health = 20;
 
-<<<<<<< Updated upstream
-=======
-    // spike damage
-    public float spikeDamage = 10;
-
->>>>>>> Stashed changes
     void Update()
     {
-        if (Time.time > nextShootTime && IsWithinScreenBounds())
+        if (Time.time > nextShootTime)
         {
             ShootProjectile();
             nextShootTime = Time.time + shootingRate;
@@ -87,19 +79,10 @@ public class Shooter : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
     
 
 
 
 
 
-=======
-    bool IsWithinScreenBounds()
-    {
-        Vector3 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
-        return viewportPosition.x >= 0f && viewportPosition.x <= 1f &&
-               viewportPosition.y >= 0f && viewportPosition.y <= 1f;
-    }
->>>>>>> Stashed changes
 }
