@@ -76,13 +76,13 @@ public class bubbleSpawner : MonoBehaviour
         float cameraHeight = 2f * mainCamera.orthographicSize;
         float cameraWidth = cameraHeight * mainCamera.aspect;
 
-        // Calculate the position range within camera bounds
+        // Calculate the position range within camera bounds, taking into account the camera's current position
         float xRange = cameraWidth / 2f - objectWidth / 2f;
         float yRange = cameraHeight / 2f - objectHeight / 2f;
 
-        // Generate random position within camera bounds
-        float randomX = Random.Range(-xRange, xRange);
-        float randomY = Random.Range(-yRange, yRange);
+        // Generate random position within camera bounds, relative to the camera's position
+        float randomX = Random.Range(-xRange, xRange) + mainCamera.transform.position.x;
+        float randomY = Random.Range(-yRange, yRange) + mainCamera.transform.position.y;
 
         // Instantiate the object at the random position
         Instantiate(bubble, new Vector3(randomX, randomY, 0f), Quaternion.identity);
