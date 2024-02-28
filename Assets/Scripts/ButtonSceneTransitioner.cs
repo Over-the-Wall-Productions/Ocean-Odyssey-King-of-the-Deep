@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class StartGameButton : MonoBehaviour
 {
-    public int gameStartScene;
+    public int nextScene;
     // Start is called before the first frame update
 
     public void StartGame()
     {
-      SceneManager.LoadScene(gameStartScene);
+      SceneManager.LoadScene(nextScene);
     }
 
 }
