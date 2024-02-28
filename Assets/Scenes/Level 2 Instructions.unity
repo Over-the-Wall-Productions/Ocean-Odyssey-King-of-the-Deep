@@ -754,7 +754,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter Text Here
+  m_text: Captain, I congratulate you on the success of your previous mission; however,
+    I must bring to your attention that our resources outpost in Athena caves is
+    under attack. it has been overrun with more of the explosive fish and those mysterious
+    boxes, which are preventing our ships from refueling, again we need your help
+    so we can continue our work.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
@@ -781,8 +785,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110
-  m_fontSizeBase: 110
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -817,7 +821,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -160.91235, y: 0, z: -173.48352, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
