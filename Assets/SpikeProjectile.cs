@@ -22,5 +22,10 @@ public class SpikeProjectile : MonoBehaviour
             var playerHealth = collision.gameObject.GetComponent<HealthController>();
             playerHealth.TakeDamage(spikeDamage);
         }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

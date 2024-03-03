@@ -12,6 +12,7 @@ TagManager:
   - Ink
   - Spawner_box
   - sonar
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -59,17 +59,5 @@ public class Player : MonoBehaviour
         transform.position = _camera.ViewportToWorldPoint(viewPos);
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    var enemySpike = collision.GetComponent<Shooter>();
-    //    if (collision.CompareTag("Spike"))
-    //    {
-    //        var playerHealth = gameObject.GetComponent<HealthController>();
-    //        playerHealth.TakeDamage(enemySpike.spikeDamage);
-    //        Destroy(collision.gameObject);
-    //    }
-    //}
-
-
 
 }
