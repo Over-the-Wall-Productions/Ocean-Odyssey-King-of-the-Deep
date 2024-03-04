@@ -21,9 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2.unity
     guid: 9b7e07b1616934909b11cfc81424f1f3
   - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 1b884518516f942c6af52f8f5b140edd
+  - enabled: 1
     path: Assets/Scenes/Endless Mode Instructions.unity
     guid: 9536ca7252138e849919e3eea8951f52
   - enabled: 1
     path: Assets/Scenes/Endless Mode.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Lvl 1 Game Over.unity
+    guid: 6281a87f36ae0b8428304cf92eacd13e
+  - enabled: 1
+    path: Assets/Scenes/Lvl 2 Game Over.unity
+    guid: 156dd37def147ff40ae247dcf0d50dae
+  - enabled: 1
+    path: Assets/Scenes/Lvl 3 Game Over.unity
+    guid: 1e7088282bdd17046865e8949d5f8cb7
+  - enabled: 1
+    path: Assets/Scenes/Level 3 Instructions.unity
+    guid: c28b8e38aa0cd864b83a7a18fc026fdd
   m_configObjects: {}
