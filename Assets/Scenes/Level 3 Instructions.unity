@@ -754,8 +754,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Captain, hold off all enemies. We need your help: we are on the verge
-    of fulfilling humanities greatest desire'
+  m_text: Captain, the resource unit is thankful to have the maze cleared; nevertheless,
+    the job is still not finished. the combat vessels are still compromised, but
+    we need to claim nova waters. We lost contact with the previous ships and have
+    lost progress on our established outpost. it appears more of those pesky boxes
+    have been dropped, and from our last correspondence with the previous crews,
+    their appears to be some beast preventing reentry.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
@@ -782,8 +786,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 110
-  m_fontSizeBase: 110
+  m_fontSize: 71.72569
+  m_fontSizeBase: 71.72569
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -818,7 +822,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -128.22711, y: 0, z: -165.94067, w: 0}
+  m_margin: {x: -288.53473, y: 0, z: -331.50415, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
