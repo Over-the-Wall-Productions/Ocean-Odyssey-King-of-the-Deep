@@ -23,6 +23,8 @@ public class Shooting : MonoBehaviour
 
     private bool canShoot = true; //new
 
+    [SerializeField] private AudioSource shootSound;
+
 
 
     private void Update()
@@ -42,6 +44,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && canShoot)
         {
             Shoot();
+            shootSound.Play();
             timeOfLastShot = Time.time;
             canShoot = false;
         }
