@@ -13,6 +13,10 @@ public class Spawning_boxes : MonoBehaviour
     //private bool alive = true;
     public float box_health = 4f;
 
+    public AudioClip destroySound;
+    public float volume = 1.0f; // Volume to play the sound
+
+
     //Boss_Conditions bc;
 
     void Start()
@@ -71,6 +75,10 @@ public class Spawning_boxes : MonoBehaviour
         }
         if (box_health <= 0)
         {
+            if (destroySound != null)
+            {
+                AudioSource.PlayClipAtPoint(destroySound, transform.position, volume);
+            }
             //var component = GetComponent<Boss_Conditions>();
             //component.condo_count -= 1;
             //bc.decrease();
