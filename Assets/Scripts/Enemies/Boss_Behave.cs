@@ -45,6 +45,26 @@ public class Boss_Behave : MonoBehaviour
         health -= damage;
         if(health == 0)
         {
+            GameObject targetObject = GameObject.Find("Task Manager");
+            if (targetObject != null)
+            {
+                // Get the TargetScript component attached to the GameObject
+                LevelManager targetScript = targetObject.GetComponent<LevelManager>();
+
+                if (targetScript != null)
+                {
+                    // Call the TargetFunction
+                    targetScript.enemyManager();
+                }
+                else
+                {
+                    Debug.LogError("TargetScript not found on GameObject.");
+                }
+            }
+            else
+            {
+                Debug.LogError("GameObject with name 'Task Manager' not found.");
+            }
             Instantiate(upgradePrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
             

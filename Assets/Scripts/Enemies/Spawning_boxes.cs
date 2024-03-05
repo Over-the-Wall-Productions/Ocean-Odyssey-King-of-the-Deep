@@ -74,7 +74,28 @@ public class Spawning_boxes : MonoBehaviour
             //var component = GetComponent<Boss_Conditions>();
             //component.condo_count -= 1;
             //bc.decrease();
+            GameObject targetObject = GameObject.Find("Task Manager");
+            if (targetObject != null)
+            {
+                // Get the TargetScript component attached to the GameObject
+                LevelManager targetScript = targetObject.GetComponent<LevelManager>();
+
+                if (targetScript != null)
+                {
+                    // Call the TargetFunction
+                    targetScript.enemyManager();
+                }
+                else
+                {
+                    Debug.LogError("TargetScript not found on GameObject.");
+                }
+            }
+            else
+            {
+                Debug.LogError("GameObject with name 'Task Manager' not found.");
+            }
             Destroy(gameObject);
+
             //Invoke("remove", 1f);
         }
     }
