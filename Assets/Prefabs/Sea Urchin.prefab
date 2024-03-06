@@ -103,6 +103,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3508492890553855867, guid: 7cf876ac027061147a6a623f5741db66, type: 3}
   shootingRate: 2
   projectileSpeed: 5
+  explosionEffectPrefab: {fileID: 4543899696051400555, guid: 479c02b8741f24494bf6d2ee5076387d, type: 3}
   _damageAmount: 10
   health: 20
 --- !u!50 &8753357486231974415

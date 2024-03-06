@@ -473,9 +473,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
   m_text: Captain, We are greatful for you work. The excavation crew has been sent
     out and resource extraction will soon start. The ocean is free of pests, you
     alone have conquered the deep.
+=======
+  m_text: You are now king of the deep
+>>>>>>> b4e0faede9b39842c0474c60ff3c669c8df9591b
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}

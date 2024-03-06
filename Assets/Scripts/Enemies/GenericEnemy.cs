@@ -6,6 +6,7 @@ public class Shooter : MonoBehaviour
     public GameObject projectilePrefab; // Assign your projectile prefab in the inspector
     public float shootingRate = 2f; // Time between shots
     public float projectileSpeed = 10f; // Speed of the projectile
+    public GameObject explosionEffectPrefab; // this is the invisible explosion that will spawn
 
     private float nextShootTime;
 
@@ -53,6 +54,13 @@ public class Shooter : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             TakeDamage(playerBullet.damage);
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("e_bullet"))
+        {
+            Score.scoreValue += 1;
+            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }
