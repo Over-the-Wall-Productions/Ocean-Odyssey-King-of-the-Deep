@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class sonar : MonoBehaviour
 {
+    /*
     public float growthTime = 3f; // Time in seconds until the object stops growing
     public float maxScale = 2f; // Maximum scale the object will reach
     public float initialTransparency = 1f; // Initial transparency of the object
@@ -96,4 +97,5 @@ public class sonar : MonoBehaviour
             otherRigidbody.AddForce(awayDirection * pushForce, ForceMode2D.Impulse);
         }
     }
+    */
 }

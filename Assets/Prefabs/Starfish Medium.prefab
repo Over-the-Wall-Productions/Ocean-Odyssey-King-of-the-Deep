@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82242e187fd95e04a9055e35c7610b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 3508492890553855867, guid: 7cf876ac027061147a6a623f5741db66, type: 3}
+  projectilePrefab: {fileID: 3508492890553855867, guid: f512139eeaeaade4eb1cd59446b4a423, type: 3}
   shootingRate: 2
   projectileSpeed: 10
   smallerStarfish: {fileID: 7634168935008072742, guid: b5abe307bfb75f442b837aa7792d4d0b, type: 3}

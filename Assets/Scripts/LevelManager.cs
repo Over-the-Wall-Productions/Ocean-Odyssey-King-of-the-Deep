@@ -109,9 +109,14 @@ public class LevelManager : MonoBehaviour
         }
         else if (isStarLevel && !bossDone)
         {
-            double percentage = ((9 - starsLeft) / 9) * 1000;
+            double numerator = 9 - starsLeft;
 
-            taskText.text = "There's a dangerous creature near you. Defeat It: " + percentage.ToString("F2") + "%";
+            double denominator = 9;
+
+            double percentage = (numerator / denominator) * 100;
+
+            
+            taskText.text = $"There's a dangerous creature near you. Defeat It: {percentage:F2}%";
         }
         else if (!bossDone)
         {

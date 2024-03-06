@@ -9,14 +9,12 @@ public class Shooting : MonoBehaviour
 
     public GameObject bulletPrefab;
 
-    public GameObject sonarPrefab;
 
     public float force = 20f;
 
     private float shotDelay = 0.5f;
     public float timeOfLastShot;
 
-    public float sonarDelay = 1f;
     public float timeOfLastSonar;
 
     public UnityEvent<float> onReload;
@@ -48,16 +46,7 @@ public class Shooting : MonoBehaviour
             timeOfLastShot = Time.time;
             canShoot = false;
         }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            // Delay between shots
-            if (Time.time - timeOfLastSonar >= sonarDelay)
-            {
-                Sonar();
-                timeOfLastSonar = Time.time;
-            }
 
-        }
     }
 
     private void Shoot()
@@ -75,6 +64,6 @@ public class Shooting : MonoBehaviour
         Vector3 center = transform.position;
 
         // Instantiate the object at the center of the current object
-        Instantiate(sonarPrefab, center, Quaternion.identity);
+        //Instantiate(sonarPrefab, center, Quaternion.identity);
     }
 }
