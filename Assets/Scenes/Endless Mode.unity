@@ -908,6 +908,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1964668011974245372, guid: 9a1262217d26847358a68e1f4374389d, type: 3}
+      propertyPath: explosivePrefab
+      value: 
+      objectReference: {fileID: 2721359559420010204, guid: 37c6e18d001d749b289ab3c850aa9707, type: 3}
     - target: {fileID: 3776422636089247066, guid: 9a1262217d26847358a68e1f4374389d, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25

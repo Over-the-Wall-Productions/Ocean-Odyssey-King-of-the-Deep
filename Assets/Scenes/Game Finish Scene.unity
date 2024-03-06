@@ -473,7 +473,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You now king of the deep
+  m_text: Captain, We are greatful for you work. The excavation crew has been sent
+    out and resource extraction will soon start. The ocean is free of pests, you
+    alone have conquered the deep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
@@ -500,8 +502,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
-  m_fontSizeBase: 200
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

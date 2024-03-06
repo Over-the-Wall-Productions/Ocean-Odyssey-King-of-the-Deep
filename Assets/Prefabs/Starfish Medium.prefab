@@ -265,6 +265,7 @@ MonoBehaviour:
   shootingRate: 2
   projectileSpeed: 10
   smallerStarfish: {fileID: 7634168935008072742, guid: b5abe307bfb75f442b837aa7792d4d0b, type: 3}
+  explosionEffectPrefab: {fileID: 4543899696051400555, guid: 479c02b8741f24494bf6d2ee5076387d, type: 3}
   _damageAmount: 0
   health: 100
   stopTime: 2

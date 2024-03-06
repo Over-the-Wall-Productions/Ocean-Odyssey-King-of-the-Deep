@@ -14,6 +14,8 @@ public class starfishSmall : MonoBehaviour
 
     public Transform player; // Player's transform
     public float speed = 5.0f; // Speed at which the object moves towards the player
+    public GameObject explosionEffectPrefab; // this is the invisible explosion that will spawn
+
 
     void Start()
     {
@@ -63,6 +65,13 @@ public class starfishSmall : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             TakeDamage(playerBullet.damage);
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("e_bullet"))
+        {
+            Score.scoreValue += 1;
+            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }

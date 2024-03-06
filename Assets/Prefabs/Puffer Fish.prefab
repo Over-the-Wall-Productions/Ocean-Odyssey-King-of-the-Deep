@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 3
+  explosionEffectPrefab: {fileID: 4543899696051400555, guid: 479c02b8741f24494bf6d2ee5076387d, type: 3}
   _damageAmount: 10
 --- !u!58 &-5277183111811658645
 CircleCollider2D:

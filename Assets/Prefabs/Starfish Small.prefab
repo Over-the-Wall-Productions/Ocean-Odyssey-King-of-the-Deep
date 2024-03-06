@@ -265,3 +265,4 @@ MonoBehaviour:
   health: 20
   player: {fileID: 0}
   speed: 7
+  explosionEffectPrefab: {fileID: 4543899696051400555, guid: 479c02b8741f24494bf6d2ee5076387d, type: 3}

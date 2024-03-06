@@ -4,6 +4,8 @@ public class MoveTowardsPlayer : MonoBehaviour
 {
     public Transform player; // Player's transform
     public float speed = 5.0f; // Speed at which the object moves towards the player
+    public GameObject explosionEffectPrefab; // this is the invisible explosion that will spawn
+
 
     [SerializeField] private float _damageAmount;
 
@@ -36,6 +38,13 @@ public class MoveTowardsPlayer : MonoBehaviour
             Destroy(gameObject);
             Destroy(collision.gameObject);
         }
+        if(collision.CompareTag("e_bullet"))
+        {
+            Score.scoreValue += 1;
+            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 
 
@@ -47,6 +56,7 @@ public class MoveTowardsPlayer : MonoBehaviour
         {
             var playerHealth = collision.GetComponent<HealthController>();
             playerHealth.TakeDamage(_damageAmount);
+            Destroy(gameObject);
         }
     }
 }

@@ -13,6 +13,7 @@ TagManager:
   - Spawner_box
   - sonar
   - Wall
+  - e_bullet
   layers:
   - Default
   - TransparentFX

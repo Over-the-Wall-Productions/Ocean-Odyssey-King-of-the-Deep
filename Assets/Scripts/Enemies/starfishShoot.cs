@@ -7,6 +7,7 @@ public class starfishShoot : MonoBehaviour
     public float shootingRate = 2f; // Time between shots
     public float projectileSpeed = 10f; // Speed of the projectile
     public GameObject smallerStarfish;
+    public GameObject explosionEffectPrefab;
 
     private float nextShootTime;
 
@@ -93,6 +94,13 @@ public class starfishShoot : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             TakeDamage(playerBullet.damage);
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("e_bullet"))
+        {
+            Score.scoreValue += 1;
+            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }
