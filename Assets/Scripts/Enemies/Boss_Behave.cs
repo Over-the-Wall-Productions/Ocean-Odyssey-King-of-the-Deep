@@ -18,8 +18,8 @@ public class Boss_Behave : MonoBehaviour
     }
 
     void ShootBullets()
-    {
-        for (int i = 0; i < 360; i += 45)
+    {   
+        for (int i = Random.Range(0, 45); i < 360; i += 45)
         {
             Quaternion rotation = Quaternion.Euler(0, 0, i);
             GameObject bullet = Instantiate(bulletPrefab, transform.position, rotation);
