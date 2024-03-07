@@ -754,7 +754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Captain, the reconnasance ships have been compromised; it appears there
+  m_text: "Captain, the reconnaissance ships have been compromised; it appears there
     are boxes scattered throughout the map that are somehow spawing explosive fish.
     All remaining vessels are unable to fight, so captain i do apologize but you
     alone must reclaim squids grounds by destroying these mysterious boxes and all
@@ -786,8 +786,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 63.5
+  m_fontSizeBase: 63.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
