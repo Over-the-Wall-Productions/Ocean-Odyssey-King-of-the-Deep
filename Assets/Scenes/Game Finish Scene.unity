@@ -473,7 +473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Captain, we are grateful for your work. The excevation crew is beginning
+  m_text: Captain, we are grateful for your work. The excavation crew is beginning
     operations to begin resource extraction. You alone have conquered the deep
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
