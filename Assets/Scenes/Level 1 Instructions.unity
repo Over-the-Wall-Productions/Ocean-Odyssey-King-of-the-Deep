@@ -587,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -339}
+  m_AnchoredPosition: {x: 0, y: -415}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1783170780
@@ -731,7 +731,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.9661, y: 312}
+  m_AnchoredPosition: {x: -5.9661, y: 427}
   m_SizeDelta: {x: 1368.7544, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033353402
@@ -754,12 +754,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Captain, the reconnaissance ships have been compromised; it appears there
-    are boxes scattered throughout the map that are somehow spawing explosive fish.
-    All remaining vessels are unable to fight, so captain i do apologize but you
-    alone must reclaim squids grounds by destroying these mysterious boxes and all
-    enemies, so the work ships may procceed with their duties \n(wasd/arrow keys
-    for movement, mouse for rotating and shooting)"
+  m_text: 'Captain, the reconnaissance ships have been compromised; it appears there
+    are boxes scattered throughout the map that are somehow spawning explosive fish.
+    All remaining vessels are unable to fight. Captain, I do apologize, but you alone
+    must reclaim Squid''s grounds by destroying these mysterious boxes and all enemies
+    so the work ships may proceed with their duties.
+
+
+
+    (WASD/arrow keys for
+    movement, mouse for rotating and shooting)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}

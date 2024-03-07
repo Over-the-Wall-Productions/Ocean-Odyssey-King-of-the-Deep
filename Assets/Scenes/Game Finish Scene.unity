@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 218}
+  m_AnchoredPosition: {x: 10, y: 290}
   m_SizeDelta: {x: 1200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333178888
@@ -473,8 +473,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Captain, we are grateful for your work. The excavation crew is beginning
-    operations to begin resource extraction. You alone have conquered the deep
+  m_text: Captain, we are grateful for your work. The excavation crew is commencing
+    operations to initiate resource extraction. You alone have conquered the depths.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
   m_sharedMaterial: {fileID: -5562194553449226400, guid: 44debe5f84cf06048a836260c1dbf171, type: 2}
