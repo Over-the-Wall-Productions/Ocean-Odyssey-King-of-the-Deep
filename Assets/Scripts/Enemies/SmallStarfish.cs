@@ -71,7 +71,6 @@ public class starfishSmall : MonoBehaviour
         {
             Score.scoreValue += 1;
             Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
             Destroy(collision.gameObject);
         }
     }
